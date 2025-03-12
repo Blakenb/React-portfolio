@@ -42,11 +42,11 @@ header, footer {
 
 header h1 {
   margin: 0;
-  font-size: 2rem; /* Adjust the font size as needed */
+  font-size: 1.5rem; /* Adjust the font size for mobile */
 }
 
 main {
-  padding: 2rem;
+  padding: 1rem;
   height: calc(100vh - 2rem); /* Adjust height to fill the remaining space */
   border: 3px solid #000; /* Bold black border */
   background-color: #1a1a1a; /* Dark background */
@@ -54,12 +54,12 @@ main {
 
 /* Common section styles */
 .section {
-  padding: 2rem;
+  padding: 1rem;
   background-color: #2a2a2a; /* Slightly lighter dark background */
   color: #e0e0e0; /* Light text color */
   border: 3px solid #444; /* Dark grey border */
   border-radius: 10px; /* Rounded corners */
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Stronger shadow */
 }
 
@@ -91,7 +91,7 @@ main {
 
 .card {
   margin: 0; /* Remove margin */
-  padding: 2rem;
+  padding: 1rem;
   border: 5px solid #000; /* Black border */
   border-radius: 10px; /* Rounded corners */
   width: 100%; /* Full width */
@@ -121,7 +121,7 @@ main {
 a {
   color: #1e90ff; /* Dodger blue for links */
   text-decoration: none;
-  font-size: 22px; /* Increase link font size */
+  font-size: 18px; /* Adjust link font size for mobile */
 }
 
 a:hover {
@@ -129,26 +129,26 @@ a:hover {
 }
 
 .about-me a {
-  font-size: 32px; /* Increase GitHub link font size */
+  font-size: 24px; /* Adjust GitHub link font size for mobile */
 }
 
 section {
-  margin: 20px 0;
-  padding: 20px;
+  margin: 10px 0;
+  padding: 10px;
   background-color: #2a2a2a; /* Darker section background */
-  border: 5px solid #444; /* Dark grey border */
+  border: 3px solid #444; /* Dark grey border */
   border-radius: 10px; /* Rounded corners */
-  font-size: 24px; /* Section font size */
+  font-size: 18px; /* Adjust section font size for mobile */
 }
 
 footer {
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 10px;
   background-color: #333;
   color: white;
   text-align: center;
-  border-top: 5px solid #444; /* Dark grey border */
-  font-size: 22px; /* Increase footer font size */
+  border-top: 3px solid #444; /* Dark grey border */
+  font-size: 18px; /* Adjust footer font size for mobile */
 }
 
 ul {
@@ -158,7 +158,7 @@ ul {
 
 ul li {
   display: inline; /* Display list items inline */
-  margin-right: 10px; /* Reduce space between items */
+  margin-right: 5px; /* Reduce space between items */
 }
 
 ul li::before {
@@ -168,14 +168,14 @@ ul li::before {
 }
 
 nav {
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 nav a {
-  margin: 0 10px;
+  margin: 0 5px;
   color: #1e90ff; /* Light text color */
   text-decoration: none;
-  font-size: 24px; /* Increase link font size */
+  font-size: 18px; /* Adjust link font size for mobile */
 }
 
 nav a:hover {
@@ -191,7 +191,7 @@ nav ul {
 }
 
 nav ul li {
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 
 nav ul li a {
@@ -228,11 +228,11 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  max-width: 400px;
+  max-width: 100%; /* Full width for mobile */
   margin: 0 auto;
   border: 3px solid #444; /* Dark grey border */
   background-color: #2a2a2a; /* Dark background */
-  padding: 2rem;
+  padding: 1rem; /* Adjust padding for mobile */
   border-radius: 10px; /* Rounded corners */
 }
 
@@ -271,10 +271,10 @@ form button:hover {
 .portfolio {
   background-color: #2a2a2a; /* Slightly lighter dark background */
   color: #e0e0e0; /* Light text color */
-  padding: 2rem;
+  padding: 1rem; /* Adjust padding for mobile */
   border-radius: 10px;
-  margin: 2rem auto;
-  max-width: 600px; /* Limit the width */
+  margin: 1rem auto;
+  max-width: 100%; /* Full width for mobile */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Stronger shadow */
 }
 
@@ -297,7 +297,7 @@ form button:hover {
 }
 
 .portfolio {
-  padding: 2rem;
+  padding: 1rem;
   background-color: #1a1a1a; /* Match the dark background */
   color: #e0e0e0; /* Match the light text color */
 }
@@ -310,7 +310,7 @@ form button:hover {
   font-weight: bold;
   color: #b0b0b0; /* Slightly darker grey text color */
   margin-right: auto; /* Pushes the name to the left */
-  font-size: 2.5rem; /* Increase font size */
+  font-size: 1.5rem; /* Adjust font size for mobile */
   margin-left: 0; /* Ensure it is aligned to the left */
   text-shadow: 2px 2px 0 #000; /* Bold black text shadow */
 }
@@ -339,11 +339,11 @@ form button:hover {
   background-color: #2a2a2a; /* Dark background */
   color: #e0e0e0; /* Light text color */
   font-family: Arial, sans-serif;
-  font-size: 18px; /* Base font size */
+  font-size: 16px; /* Adjust base font size for mobile */
   padding: 1rem; /* Add padding */
   border-radius: 10px; /* Rounded corners */
   margin: 1rem auto; /* Center the section with margin */
-  max-width: 80%; /* Limit the width */
+  max-width: 100%; /* Full width for mobile */
   text-align: center; /* Center the text */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Stronger shadow */
 }
@@ -375,10 +375,10 @@ form button:hover {
 .contact {
   background-color: #2a2a2a; /* Slightly lighter dark background */
   color: #e0e0e0; /* Light text color */
-  padding: 2rem;
+  padding: 1rem; /* Adjust padding for mobile */
   border-radius: 10px;
-  margin: 2rem auto;
-  max-width: 600px; /* Limit the width */
+  margin: 1rem auto;
+  max-width: 100%; /* Full width for mobile */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Stronger shadow */
   text-align: left; /* Align text to the left */
 }
@@ -417,7 +417,7 @@ form button:hover {
   cursor: pointer;
   transition: background-color 0.3s ease;
   align-self: center; /* Center the button */
-  width: 50%; /* Button width */
+  width: 100%; /* Full width for mobile */
 }
 
 .contact button:hover {
