@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F5F5F5; /* Light Gray Background */
+  color: #333333; /* Dark Gray Text */
+  font-size: 18px; /* Base font size for mobile */
+}
+
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 10px; /* Rounded corners */
+  background-color: #FAF0CA; /* Light Yellow Background */
+  padding: 1rem; /* Add padding to #root */
+  height: 100vh; /* Fill the entire viewport height */
+}
+
+header, footer {
+  background-color: #0D3B66; /* Dark Blue Background */
+  color: #FAF0CA; /* Light Yellow Text */
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem; /* Adjust the font size as needed */
+}
+
+main {
+  padding: 1rem;
+  height: calc(100vh - 2rem); /* Adjust height to fill the remaining space */
+}
+
+/* Common section styles */
+.section {
+  padding: 1rem;
+  background-color: #FAF0CA; /* Light Yellow Background */
+  color: #333333; /* Dark Gray Text */
+  border: 1px solid #0D3B66; /* Dark Blue Border */
+  border-radius: 10px; /* Rounded corners */
+  margin-bottom: 1rem;
+}
+
+.logo {
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #ffcc00); /* Yellow drop shadow */
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #ffcc00);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  margin: 0; /* Remove margin */
+  padding: 2rem;
+  border: 5px solid #000; /* Black border */
+  border-radius: 10px; /* Rounded corners */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.github-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #000; /* Black background */
+  color: #ffcc00; /* Yellow text color */
+  text-decoration: none;
+  border-radius: 4px;
+  border: 2px solid #ffcc00; /* Yellow border */
+}
+
+.github-link:hover {
+  background-color: #333; /* Darker background on hover */
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+a {
+  color: #f5f5f5; /* Light for links */
+  text-decoration: none;
+  font-size: 22px; /* Increase link font size */
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.about-me a {
+  font-size: 32px; /* Increase GitHub link font size */
+}
+
+section {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #1c1f24; /* Darker section background */
+  border: 5px solid #8b0000; /* Dark red border */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 48px; /* Double section font size */
+}
+
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  border-top: 5px solid #4b0000; /* Darker red border */
+  font-size: 22px; /* Increase footer font size */
+}
+
+ul {
+  list-style: none; /* Remove default bullet points */
+  padding: 0;
+}
+
+ul li {
+  display: inline; /* Display list items inline */
+  margin-right: 10px; /* Reduce space between items */
+}
+
+ul li::before {
+  content: "•"; /* Add bullet point */
+  margin-right: 5px; /* Space between bullet and text */
+  color: #f5f5f5; /* Light bullet color */
+}
+
+nav {
+  margin: 20px 0;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #f5f5f5; /* Light text color */
+  text-decoration: none;
+  font-size: 24px; /* Increase link font size */
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  color: #FAF0CA; /* Light Yellow Text */
+  text-decoration: none;
+}
+
+.project {
+  border: 1px solid #0D3B66; /* Dark Blue Border */
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #F4D35E; /* Yellow Background */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.project a {
+  color: #0D3B66; /* Dark Blue Link */
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+.project h2 {
+  color: #0D3B66; /* Dark Blue Text */
+}
+
+.project p {
+  color: #333333; /* Dark Gray Text */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 0.5rem;
+}
+
+form input, form textarea {
+  padding: 0.5rem;
+  border: 1px solid #0D3B66; /* Dark Blue Border */
+  border-radius: 4px;
+  background-color: #FAF0CA; /* Light Yellow Background */
+  color: #333333; /* Dark Gray Text */
+}
+
+form button {
+  padding: 0.5rem 1rem;
+  background-color: #0D3B66; /* Dark Blue Background */
+  color: #FAF0CA; /* Light Yellow Text */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #F4D35E; /* Yellow Background */
+  color: #0D3B66; /* Dark Blue Text */
+}
+
+.portfolio {
+  padding: 2rem;
+  background-color: #1a1a1a; /* Match the dark background */
+  color: #e0e0e0; /* Match the light text color */
+}
+
+.portfolio h1 {
+  color: #e0e0e0; /* Match the heading color */
+}
+
+.nav-name {
+  font-weight: bold;
+  color: #FAF0CA; /* Light Yellow Text */
+  margin-right: auto; /* Pushes the name to the left */
+  font-size: 2rem; /* Increase font size */
+  margin-left: 0; /* Ensure it is aligned to the left */
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* Add this to your App.css or a specific CSS file for the About page */
+.about-section {
+  padding: 1rem;
+  background-color: #FAF0CA; /* Light Yellow Background */
+  color: #333333; /* Dark Gray Text */
+  border: 1px solid #0D3B66; /* Dark Blue Border */
+  border-radius: 10px; /* Rounded corners */
+  margin-bottom: 1rem;
+}
+
+.about-me {
+  background-color: #FAF0CA; /* Light Yellow Background */
+  color: #333333; /* Dark Gray Text */
+  font-family: Arial, sans-serif;
+  font-size: 18px; /* Base font size */
+  padding: 1rem; /* Add padding */
+  border-radius: 10px; /* Rounded corners */
+  margin: 1rem auto; /* Center the section with margin */
+  max-width: 80%; /* Limit the width */
+  text-align: center; /* Center the text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Media queries for larger screens */
+@media (min-width: 600px) {
+  body {
+    font-size: 20px; /* Increase font size for larger screens */
+  }
+
+  #root {
+    max-width: 1280px;
+    padding: 2rem;
+  }
+
+  main {
+    padding: 2rem;
+  }
+
+  .section {
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  form {
+    max-width: 400px;
+  }
+
+  .nav-name {
+    font-size: 2.5rem; /* Increase font size for larger screens */
+  }
+
+  .nav-container {
+    justify-content: space-between; /* Adjust alignment for larger screens */
+  }
+}
+
+@media (min-width: 900px) {
+  .nav-name {
+    font-size: 3rem; /* Further increase font size for even larger screens */
+  }
+
+  .section {
+    padding: 3rem; /* Further increase padding for even larger screens */
+    margin-bottom: 3rem; /* Further increase margin for even larger screens */
+  }
+}
