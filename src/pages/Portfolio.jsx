@@ -12,9 +12,21 @@ const Portfolio = () => (
     />
     <Project
       title="Project 2"
-      description="Description of Project 2"
-      link="https://github.com/blakenb/project2"
+      description="Description of Project 2 this was a employee tracker that I created to help manage employees and their information."
+      link="https://github.com/Blakenb/employee-tracker-sql-challenge"
     />
+    <Project
+      title="Project 3"
+      description="Description of Project 3 this was a weather dashboard that I created to help people find the weather in their area."
+      link="https://github.com/Blakenb/weather-dashboard-challenge-9"
+    />
+    
+    <Project
+      title="Project 3"
+      description="Description of Project 4 this was a vehicle builder that I created to help people find the best vehicle for their needs."
+      link="https://github.com/Blakenb/vehicle-builder-challenge-8"
+    />
+    
     {/* Add more projects as needed */}
   </div>
 );

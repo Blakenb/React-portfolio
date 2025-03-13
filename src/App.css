@@ -13,9 +13,14 @@ body {
   background-color: #1a1a1a; /* Dark background */
   color: #e0e0e0; /* Light text color */
   text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; /* Dark text shadow */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
 }
 
 #root {
+  flex: 1;
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -23,7 +28,6 @@ body {
   border: 5px solid #444; /* Dark grey border */
   background-color: #333; /* Dark grey background */
   padding: 1rem; /* Adjusted padding for mobile */
-  height: 100vh; /* Fill the entire viewport height */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Stronger shadow */
 }
 
@@ -32,6 +36,16 @@ header, footer {
   color: #FAF0CA; /* Light Yellow Text */
   text-align: center;
   padding: 1rem 0;
+}
+
+header {
+  flex-shrink: 0;
+}
+
+footer {
+  flex-shrink: 0;
+  margin-top: auto; /* Push footer to the bottom */
+  width: 100%;
 }
 
 .header-content {
@@ -46,8 +60,8 @@ header h1 {
 }
 
 main {
+  flex: 1;
   padding: 1rem;
-  height: calc(100vh - 2rem); /* Adjust height to fill the remaining space */
   border: 3px solid #000; /* Bold black border */
   background-color: #1a1a1a; /* Dark background */
 }
@@ -166,13 +180,13 @@ section {
 }
 
 footer {
-  margin-top: 10px;
-  padding: 10px;
-  background-color: #333;
-  color: white;
+  background-color: #121212; /* Darker background */
+  color: #e0e0e0; /* Light text color */
   text-align: center;
-  border-top: 3px solid #444; /* Dark grey border */
-  font-size: 18px; /* Adjust footer font size for mobile */
+  padding: 1rem;
+  border-top: 3px solid #222; /* Darker grey border */
+  margin-top: auto; /* Push footer to the bottom */
+  width: 100%;
 }
 
 ul {
@@ -481,6 +495,16 @@ form button:hover {
 
 .github-logo:hover {
   transform: scale(1.1); /* Slightly enlarge the logo on hover */
+}
+
+.github-profile a {
+  color: #1e90ff; /* Dodger blue for links */
+  text-decoration: none;
+  font-size: 1rem; /* Adjust the font size as needed */
+}
+
+.github-profile a:hover {
+  text-decoration: underline;
 }
 
 /* Media queries for larger screens */
