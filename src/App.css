@@ -63,6 +63,30 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Stronger shadow */
 }
 
+.section ul {
+  list-style: none; /* Remove default bullet points */
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; /* Ensure items wrap */
+  gap: 0.5rem; /* Add space between items */
+}
+
+.section ul li {
+  background-color: #444; /* Dark grey background for list items */
+  padding: 0.5rem 1rem;
+  border-radius: 5px; /* Rounded corners */
+  color: #e0e0e0; /* Light text color */
+  flex: 1 1 calc(50% - 1rem); /* Ensure items take up half the width minus the gap */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  text-align: center; /* Center the text */
+}
+
+@media (min-width: 600px) {
+  .section ul li {
+    flex: 1 1 calc(33.333% - 1rem); /* Adjust to three columns on larger screens */
+  }
+}
+
 .logo {
   will-change: filter;
   transition: filter 300ms;
@@ -460,6 +484,10 @@ form button:hover {
 
   .portfolio, .contact {
     max-width: 800px; /* Increase max-width for larger screens */
+  }
+
+  .section ul li {
+    flex: 1 1 calc(33.333% - 1rem); /* Adjust to three columns on larger screens */
   }
 }
 
