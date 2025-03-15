@@ -33,3 +33,11 @@ This is a personal portfolio website built using **React** and **Vite**. It show
 - **Version Control**: Git
 
 ---
+
+## How to reach me
+
+blake@email.com
+https://github.com/blakenb
+
+Here is a link to my Portfolio
+https://blakenb-portfolio.netlify.app/

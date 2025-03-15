@@ -1,11 +1,12 @@
 // src/pages/Home.jsx
 import React from 'react';
-
+import myPhoto from '../assets/myPhoto.jpeg'; // Adjust the path if needed
 const Home = () => (
   <section className="section">
     <h1>Welcome to My Portfolio,<br/>
     My name is Blake Brittain!
     </h1>
+    <img src={myPhoto} alt="Blake Brittain" style={{ width: '200px', borderRadius: '50%' }} />
     <p>I am a passionate developer who loves to code. I am a proud husband to a wonderful wife who has pushed me to follow my dreams of getting into tech. She has been my biggest supporter and motivator throughout this journey. I am also a father of two beautiful children, and a lover of all the bully breeds dogs(pit bulls are my favorite). In my free time, I love to get out and take pictures of all things in nature, if I am not out taking pictures or spending time with my family I am sitting at my computer coding away. I am currently in a coding bootcamp at the University of Texas , where I am learning full-stack web development.
       <br/>
       <br />
