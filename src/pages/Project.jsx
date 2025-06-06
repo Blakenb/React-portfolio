@@ -25,7 +25,9 @@ function Projects() {
             Project 2
           </a>
         </li>
-        {/* Add more projects as needed */}
+        <a href="https://inner-orbit.onrender.com/journal" target="_blank" rel="noopener noreferrer">
+            Project 2
+          </a>
       </ul>
     </section>
   );
